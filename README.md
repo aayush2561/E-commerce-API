@@ -8,9 +8,9 @@ It has feautre like user-authnetication,Edit user profile,view order history and
 
 ## Features
 
--User Authentication
--User profile edit and view order history
--Order procesing
+- User Authentication
+- User profile edit and view order history
+- Order procesing
 
 ## Technology used
 - Nodejs : Backend

@@ -1,4 +1,4 @@
-// /routes/UserRoutes.js
+
 import express from 'express';
 import { editProfile, viewOrderHistory } from '../controllers/UserController.js';
 import { protectedRoute } from '../middleware/ProtectedRoute.js';

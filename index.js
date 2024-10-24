@@ -1,7 +1,11 @@
 import express from 'express';
 import cookieParser from 'cookie-parser'; 
-import db from './config/db.js'; 
+import swaggerUi from 'swagger-ui-express';
+import cors from 'cors'
 
+
+import db from './config/db.js'; 
+import {swaggerDocs} from './docs/Swaggerdocs.js';
 
 import AuthRoute from './routes/AuthRoute.js';
 import UserRoute from './routes/UserRoute.js';
@@ -18,6 +22,11 @@ db();
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+  credentials: true 
+}));
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use('/api/auth', AuthRoute); 
 app.use('/api/user',UserRoute);

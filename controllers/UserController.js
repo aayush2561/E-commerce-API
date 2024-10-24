@@ -13,7 +13,7 @@ export const editProfile = async (req, res, next) => {
         if (!user) {
             return next(new AppError('User not found', 404));
         }
-        res.json(user);
+        res.json({ username: user.username });
     } catch (error) {
         next(error);
     }
@@ -21,7 +21,10 @@ export const editProfile = async (req, res, next) => {
 
 export const viewOrderHistory = async (req, res, next) => {
     try {
-        const user = await User.findById(req.user.id).populate('orderHistory');
+        const user = await User.findById(req.user.id).populate({
+            path: 'orderHistory',
+            select: '-user' 
+        });
         if (!user) {
             return next(new AppError('User not found', 404));
         }

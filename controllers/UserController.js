@@ -13,7 +13,7 @@ export const editProfile = async (req, res, next) => {
         if (!user) {
             return next(new AppError('User not found', 404));
         }
-        res.json(user.username);
+        res.json(user);
     } catch (error) {
         next(error);
     }

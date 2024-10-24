@@ -1,11 +1,10 @@
 import express from 'express';
-import { placeOrder, trackOrder, updatePaymentStatus } from '../controllers/orderController.js';
-import authMiddleware from '../middlewares/authMiddleware.js';
-
+import { placeOrder, trackOrder, updatePaymentStatus } from '../controllers/OrderController.js';
+import { protectedRoute } from '../middleware/ProtectedRoute.js';
 const router = express.Router();
 
-router.post('/place', authMiddleware, placeOrder);
-router.get('/track/:id', authMiddleware, trackOrder);
-router.put('/payment-status/:id', authMiddleware, updatePaymentStatus);
+router.post('/place', protectedRoute, placeOrder);
+router.get('/track/:id', protectedRoute, trackOrder);
+router.patch('/payment-status/:id', protectedRoute, updatePaymentStatus);
 
 export default router;

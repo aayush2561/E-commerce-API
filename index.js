@@ -5,6 +5,7 @@ import db from './config/db.js';
 
 import AuthRoute from './routes/AuthRoute.js';
 import UserRoute from './routes/UserRoute.js';
+import OrderRoute from './routes/OrderRoute.js'
 
 import { errorHandler } from './middleware/ErrorHandler.js';
 
@@ -19,7 +20,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use('/api/auth', AuthRoute); 
-app.use('/api/user',UserRoute)
+app.use('/api/user',UserRoute);
+app.use('/api/order',OrderRoute);
 
 app.use(errorHandler);
 

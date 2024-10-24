@@ -27,7 +27,8 @@ npm install
 ````
 npm start
 ````
-
+## How to use 
+ when You visit the link below you will get the docs to guide you.
 ## Link 
 
-(https://e-commerce-api-iem2.onrender.com/api-docs)
+https://e-commerce-api-iem2.onrender.com/api-docs

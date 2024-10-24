@@ -6,12 +6,13 @@ It has feautre like user-authnetication,Edit user profile,view order history and
 ## Screenshot
 ![screenshots](https://github.com/aayush2561/E-commerce-API/blob/main/Preview.png)
 
-##Features
+## Features
+
 -User Authentication
 -User profile edit and view order history
 -Order procesing
 
-##Technology used
+## Technology used
 -Nodejs : Backend
 -Expressjs:As a framework
 -Mongodb:for db
@@ -27,5 +28,5 @@ npm install
 npm start
 ````
 
-##Link 
+## Link 
 

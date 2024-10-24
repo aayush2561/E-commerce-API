@@ -29,6 +29,10 @@ npm start
 ````
 ## How to use 
  when You visit the link below you will get the docs to guide you.
+
+## Notes
+Whenever you want to make request to to some field that require jwt first login using postman api client and u see a jwt on cookie then copy that jwt and make further request.
+
 ## Link 
 
 https://e-commerce-api-iem2.onrender.com/api-docs

@@ -13,10 +13,10 @@ It has feautre like user-authnetication,Edit user profile,view order history and
 -Order procesing
 
 ## Technology used
--Nodejs : Backend
--Expressjs:As a framework
--Mongodb:for db
--Swagger:for docs
+- Nodejs : Backend
+- Expressjs:As a framework
+- Mongodb:for db
+- Swagger:for docs
 
 ## Build Command
 ````
